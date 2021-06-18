@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library App</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>178</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>Quit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <widget class="QMenu" name="libraryMenu">
+    <property name="title">
+     <string>Library</string>
+    </property>
+    <addaction name="actionPrint_Library_by_ID"/>
+    <addaction name="actionPrit_Library_by_Name"/>
+   </widget>
+   <widget class="QMenu" name="booksMenu">
+    <property name="title">
+     <string>Books</string>
+    </property>
+    <addaction name="actionAdd_Book"/>
+    <addaction name="actionSearch_Book_by_prefix"/>
+    <addaction name="actionPrint_who_borrowed_book_by_name"/>
+    <addaction name="separator"/>
+    <addaction name="actionBorrow_Book"/>
+    <addaction name="actionReturn_Book"/>
+   </widget>
+   <widget class="QMenu" name="usersMenu">
+    <property name="title">
+     <string>Users</string>
+    </property>
+    <addaction name="actionAdd_User"/>
+    <addaction name="actionPrint_Usrs_List"/>
+   </widget>
+   <addaction name="libraryMenu"/>
+   <addaction name="booksMenu"/>
+   <addaction name="usersMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPrint_Library_by_ID">
+   <property name="text">
+    <string>Print Library by ID</string>
+   </property>
+  </action>
+  <action name="actionPrit_Library_by_Name">
+   <property name="text">
+    <string>Print Library by Name</string>
+   </property>
+  </action>
+  <action name="actionAdd_User">
+   <property name="text">
+    <string>Add User</string>
+   </property>
+  </action>
+  <action name="actionPrint_Usrs_List">
+   <property name="text">
+    <string>Print Users list</string>
+   </property>
+  </action>
+  <action name="actionAdd_Book">
+   <property name="text">
+    <string>Add Book</string>
+   </property>
+  </action>
+  <action name="actionSearch_Book_by_prefix">
+   <property name="text">
+    <string>Search Book by prefix</string>
+   </property>
+  </action>
+  <action name="actionPrint_who_borrowed_book_by_name">
+   <property name="text">
+    <string>Print list of Users currently borrowing a Book</string>
+   </property>
+  </action>
+  <action name="actionBorrow_Book">
+   <property name="text">
+    <string>Borrow Book</string>
+   </property>
+  </action>
+  <action name="actionReturn_Book">
+   <property name="text">
+    <string>Return Book</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
