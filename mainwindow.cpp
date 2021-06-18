@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
   ui->setupUi(this);
 
-  app = new libraryApp();
+  app = std::make_unique<libraryApp>();
 
   loadPreviousSession();
 

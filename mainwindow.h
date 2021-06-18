@@ -7,6 +7,7 @@
 #include "libraryapp.h"
 #include <QKeyEvent>
 #include "bookDialogType.h"
+#include <memory>
 
 
 
@@ -24,7 +25,7 @@ public:
 
   //QList<QString> bookTitles;
 
-  libraryApp* app;
+  std::unique_ptr<libraryApp> app;
   void keyPressEvent(QKeyEvent* event);
   bool addUserReady;
   bool searchByPrefixReady;
